@@ -8,8 +8,8 @@ WORKDIR /app
 COPY pom.xml .
 
 # Copy the source code and package the application
-COPY src /app/src
-RUN mvn clean package -DskipTests
+#COPY src /app/src
+#RUN mvn clean package -DskipTests
 
 # Run Stage
 FROM openjdk:17-jdk-slim
