@@ -23,7 +23,7 @@ jobs:
       run: mvn -B package  -DskipTests --file backend/pom.xml
    
     - name: List artifact 
-      run: ls -lia
+      run: ls -lia backend/
       
     - name: Build & push Docker image to GHCR
       uses: mr-smithers-excellent/docker-build-push@v6
