@@ -18,6 +18,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the jar from the build stage
+RUN ls -lia
 COPY --from=build app/backend/target/*.jar app.jar
 
 # Expose the application port
